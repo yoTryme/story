@@ -1,0 +1,243 @@
+{
+    "Title": "The Legacy of Starwatch Keep",
+    "Credits": "Created by Jinghang Li (jli758@ucsc.edu).",
+    "InitialLocation": "wakeup",
+    "Locations": {
+        "wakeup": {
+            "Body": "You are an interstellar explorer who once received a distress signal from the planet M738 and embarked on an unprecedented journey. After a successful landing, do you choose to camp or detection signal?",
+            "Choices": [
+                {
+                    "Text": "Detection signal",
+                    "Target": "Detection signal"
+                },
+                {
+                    "Text": "Camp",
+                    "Target": "camp"
+                }
+            ]
+        },
+        "Detection signal": {
+            "Body": "Looking at the detector, you decide to head directly to the area with the strongest signal. You found that the last location where the signal appeared was from deep inside the cave.",
+            "Choices": [
+                {
+                    "Text": "Collect Samples",
+                    "Target": "Collect Samples"
+                },
+                {
+                    "Text": "Investigate Nearby Anomalies",
+                    "Target": "Investigate Nearby Anomalies"
+                },
+                {
+                    "Text": "Follow the source of the distress signal",
+                    "Target": "Follow"  
+                }
+            ]
+        },
+        
+        "camp": {
+            "Body": "You set up camp, gathered the equipment you needed, and prepared for a long exploration.",
+            "Choices": [
+                {
+                    "Text": "Build a Basic camp",
+                    "Target": "Basic"
+                },
+                {
+                    "Text": "Find a better spot to camp",
+                    "Target": "spot"
+                },
+                {
+                    "Text": "Set up defenses.",
+                    "Target": "Defenses"
+                }
+            ]
+        },
+        "Basic": {
+            "Body": "You quickly build a base in a place with a wide view.After completing the infrastructure, what now?",
+            "Choices": [
+                {
+                    "Text": "Detection signal",
+                    "Target": "Detection signal"
+                }
+            ]
+        },
+        "spot": {
+            "Body": "Explore the nearby area to find somewhere more suitable for a longer stay. After a while, there was no gain. Try something else?",
+            "Choices": [
+                {
+                    "Text": "Build a Basic camp",
+                    "Target": "Basic"
+                },
+                {
+                    "Text": "Set up defenses",
+                    "Target": "Defenses"
+                }
+            ]
+        },
+        "Defenses": {
+            "Body": "You have established defenses against possible alien activity. Is there anything else to do above?",
+            "Choices": [
+                {
+                    "Text": "Build a Basic camp",
+                    "Target": "Basic"
+                },
+                {
+                    "Text": "Find a better spot to camp",
+                    "Target": "spot"
+                }
+            ]
+        },
+
+        "Collect Samples": {
+            "Body": "You squatted down, picked up the rocks from the ground, and put them into the bottle containing the sample. It seemed to be of no use.",
+            "Choices": [
+                {
+                    "Text": "Try something else",
+                    "Target": "Detection signal"
+                }
+            ]  
+        },
+        "Investigate Nearby Anomalies": {
+            "Body": "Strange readings or anomalies are occurring while exploring the surrounding area.",
+            "Choices": [
+                {
+                    "Text": "Try something else",
+                    "Target": "Detection signal"
+                }
+            ]    
+        },
+
+        "Follow": {
+            "Body": "Looking at the detector, you decide to head directly to the area with the strongest signal.You found that the last location where the signal appeared was from deep inside the cave.",
+            "Choices": [
+                {
+                    "Text": "Exploring along the river",
+                    "Target": "river"
+                },
+                {
+                    "Text": "Enter the cave",
+                    "Target": "cave"
+                },
+                {
+                    "Text": "Climb mountains",
+                    "Target": "Climb"  
+                }
+            ]    
+        },
+
+        "river": {
+            "Body": "The water here does not seem to be drinkable. If you want to drink water, you need to return to the spacecraft.",
+            "Choices": [
+                {
+                    "Text": "Try something else",
+                    "Target": "Detection signal"
+                }
+            ]    
+        },
+        "Climb": {
+            "Body": "The signal is in a cave, but the scenery at the top of the mountain is quite beautiful.",
+            "Choices": [
+                {
+                    "Text": "Try something else",
+                    "Target": "Detection signal"
+                }
+            ]    
+        },
+
+
+
+        "cave": {
+            "Body": "You find a sentence written on the door of the cave: Give me food, and I will live; give me water, and I will die. What am I? After entering the cave, you find a wall and a wooden stick on the table.",
+            "Choices": [
+                {
+                    "Text": "FIRE",
+                    "Target": "Fire"
+                },
+                {
+                    "Text": "WATER",
+                    "Target": "water"
+                },
+                {
+                    "Text": "SMOKE",
+                    "Target": "Follow"  
+                }
+            ]
+        },
+
+        "Fire": {
+            "Body": "You shout 'Fire' in front of the wall, causing the wall to emit a sound and reveal a hidden door. Inside,you find a stick next to the body that seems to break the trap.",
+            "Items": ["Wooden Stick"],
+            "Choices": [
+                {
+                    "Text": "Use the wooden stick to break the trap",
+                    "Target": "break"
+                }
+            ]
+        },
+
+        "break": {
+            "Body": "You destroyed the trap and found the distress signal device in the corpse's waistband. The device's screen flickers with a series of seemingly random characters.",
+            "Items": ["Distress Signal Device"],
+            "Choices": [
+                {
+                    "Text": "Attempt to decode the message",
+                    "Target": "Decode Message"
+                }
+            ]
+        },
+        "Decode Message": {
+            "Body": "The screen shows a series of characters: 'A5F4K1'. You remember seeing similar codes in the explorer's manual. You need to enter the correct response to deactivate the device.",
+            "Choices": [
+                {
+                    "Text": "Enter 'K154FA'",
+                    "Target": "Correct Response"
+                },
+                {
+                    "Text": "Enter '1K4FA5'",
+                    "Target": "Incorrect Response"
+                },
+                {
+                    "Text": "Enter 'A5K1F4'",
+                    "Target": "Incorrect Response"
+                }
+            ]
+        },
+        "Correct Response": {
+            "Body": "I am an interstellar bandit. I accidentally fell into the trap of the locals while evading pursuit. This is my treasure. I hope someone who is destined can find it."
+        },
+
+        "Incorrect Response": {
+            "Body": "The device fails to deactivate and instead sends out a loud alarm, attracting unwanted attention.",
+            "Choices": [
+                {
+                    "Text": "Try again",
+                    "Target": "Decode Message"
+                }
+            ]
+        },
+        
+
+        "water": {
+            "Body": "You tried shouting Water in front of the wall, but there was no response.",
+            "Choices": [
+                {
+                    "Text": "Try something else",
+                    "Target": "Detection signal"
+                }
+            ]
+        },
+        "smoke": {
+            "Body": "You tried shouting 'Smoke' in front of the wall, but there was no response.",
+            "Choices": [
+                {
+                    "Text": "Try something else",
+                    "Target": "Detection signal"
+                }
+            ]
+        }
+            
+        }
+
+        
+
+        
+}
